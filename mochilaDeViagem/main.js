@@ -21,7 +21,7 @@ form.addEventListener("submit", (evento) => {
 
     if (existe) {
         itemAtual.id = existe.id
-        atualizaElemento(itemAtual)
+        atualizaElemento(itemAtual) 
 
         itens[itens.findIndex(elemento => elemento.id === existe.id)] = itemAtual
     } else {
@@ -37,10 +37,10 @@ form.addEventListener("submit", (evento) => {
 })
 
 function criaElemento(item) {
-    const novoItem = document.createElement('li')
+    const novoItem = document.createElement("li")
     novoItem.classList.add("item")
 
-    const numeroItem = document.createElement('strong')
+    const numeroItem = document.createElement("strong")
     numeroItem.innerHTML = item.quantidade
     numeroItem.dataset.id = item.id
     novoItem.appendChild(numeroItem)
@@ -63,6 +63,7 @@ function botaoDeleta(id) {
     botao.addEventListener("click", function() {
         deletaElemento(this.parentNode, id)
     })
+
 
     return botao
 }

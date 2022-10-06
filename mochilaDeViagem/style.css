@@ -12,12 +12,10 @@ html {
 }
 
 .principal {
-    flex-grow: 1;
-    flex-basis: auto;
-    min-width: 600px;
     padding: 4em 2em 2em;
     box-sizing: border-box;
     display: flex;
+    width: 80%;
     background: #C5965F;
     border-radius: 10px;
     gap: 2em;
@@ -129,3 +127,45 @@ html {
     Background: #C5965F;
     font-weight: 400;
 }
+
+
+@media screen and (max-width: 879px){
+    body {
+        margin: auto;
+        text-align: center;
+    }
+
+    .conteudo {
+        display: inline-block;
+        padding-top: 1rem;
+        text-align: center;
+        width: 80%;
+        padding: 1em;
+    }
+
+    .mochila {
+        margin-bottom: 2rem;
+    }
+    
+    .principal {
+        width: 100%;
+        display: inline-block;
+        margin: 0.5rem 0;
+        padding: 2em;
+    }
+
+    .lista {
+        margin-top: 1rem;
+    }
+
+    .button {
+        text-align: left;
+        justify-content: left;
+    }
+
+    #quantidade, #nome {
+        width: 100%;
+    }
+}
+
+
